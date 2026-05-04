@@ -528,3 +528,8 @@ input,textarea{font-family:inherit}
   .qty-add-row{flex-wrap:wrap}
   .add-to-bag{width:100%}
 }
+@media(max-width:768px){
+  .marquee-strip{display:block}
+  .marquee-track{gap:28px}
+  .marquee-track span{font-size:0.55rem;letter-spacing:0.2em}
+}
