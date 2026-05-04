@@ -163,7 +163,7 @@ function injectCartDrawer() {
     .cart-title { font-family:'Cormorant Garamond',serif; font-size:1.6rem; font-weight:400; color:#F2EDE4; letter-spacing:0.08em; }
     .cart-close { color:#9E9B93; padding:4px; transition:color 0.2s; cursor:pointer; }
     .cart-close:hover { color:#C9A45A; }
-    .cart-body { flex:1; overflow-y:auto; padding:24px 32px; }
+    .cart-body { flex:1; overflow-y:auto; padding:24px 32px;  min-height:0; }
     .cart-body::-webkit-scrollbar { width:2px; }
     .cart-body::-webkit-scrollbar-thumb { background:#C9A45A; }
     .cart-empty { text-align:center; padding:60px 0; }
@@ -186,7 +186,7 @@ function injectCartDrawer() {
     .cq-val { font-size:0.82rem; color:#F2EDE4; min-width:14px; text-align:center; }
     .cart-item-remove { color:#525049; font-size:0.6rem; letter-spacing:0.12em; text-transform:uppercase; background:none; border:none; cursor:pointer; transition:color 0.2s; padding:0; }
     .cart-item-remove:hover { color:#c04040; }
-    .cart-footer { padding:24px 32px 36px; border-top:1px solid #1e1e1e; }
+    .cart-footer { padding:24px 32px 36px; border-top:1px solid #1e1e1e; overflow-y:auto; max-height:60vh; }
     .cart-subtotal { display:flex; justify-content:space-between; align-items:baseline; margin-bottom:8px; }
     .cart-subtotal-label { font-size:0.65rem; letter-spacing:0.2em; text-transform:uppercase; color:#9E9B93; }
     .cart-subtotal-price { font-family:'Cormorant Garamond',serif; font-size:1.8rem; color:#F2EDE4; }
