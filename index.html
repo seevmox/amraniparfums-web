@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="image/png" href="images/logo.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="AMRANI PARFUMS — Luxury fragrances born from the soul of the East">
+<title>AMRANI PARFUMS — Luxury Fragrances</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="grain-overlay"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<nav class="nav" id="navbar">
+  <div class="nav-left">
+    <a href="collection.html" class="nav-link">Collection</a>
+    <a href="about.html" class="nav-link">Maison</a>
+  </div>
+  <div class="nav-logo">
+    <a href="index.html">
+      <span class="logo-text">AMRANI</span>
+      <span class="logo-sub">PARFUMS</span>
+    </a>
+  </div>
+  <div class="nav-right">
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="#" class="nav-link nav-cart">
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 2L3 6v14a2 2 0 002 2h14a2 2 0 002-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 01-8 0"/></svg>
+      <span class="cart-count">0</span>
+    </a>
+  </div>
+  <button class="nav-hamburger" id="menuToggle"><span></span><span></span><span></span></button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <div class="mobile-menu-inner">
+    <a href="index.html" class="mobile-nav-link">Home</a>
+    <a href="collection.html" class="mobile-nav-link">Collection</a>
+    <a href="about.html" class="mobile-nav-link">Maison</a>
+    <a href="contact.html" class="mobile-nav-link">Contact</a>
+  </div>
+</div>
+
+<section class="hero" id="hero">
+  <div class="hero-bg">
+    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDGh2MLdmM1NafcCbbttBixnSj6IFTxAhsdELvCK7t54A0V_DMyOD1A63mfYdC8RupJR02UhtUda_mr2CvuZZvJerGkREWcHKpfR07pJbO_QxQ4zgJ6pWzcUODLMfWjfFsz9qBVfH42LSltm-WoME_3Yh3VncfnBw7Bx_cdgZOzih4HqMrdRfFJtztD2RsRq5aA5ObqnvD0XC58_y2ksKUqHcS7Xk3PNnDWAdVlO6w6DVy1EeOr95wvrbPkFQg0-NTwZEY4M7cdJxY" alt="AMRANI PARFUMS" class="hero-img">
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">— Maison de Parfum —</p>
+    <h1 class="hero-title">
+      <span>The Art of</span>
+      <em>Invisible</em>
+      <span>Luxury</span>
+    </h1>
+    <p class="hero-subtitle">Rare ingredients. Timeless compositions. Born from the soul of the East.</p>
+    <div class="hero-actions">
+     <a href="collection.html" class="btn-primary"><span>Discover the Collection</span></a>
+      <a href="about.html" class="btn-ghost">Our Story</a>
+    </div>
+  </div>
+  <div class="hero-scroll-indicator">
+    <div class="scroll-line"></div>
+    <span>Scroll</span>
+  </div>
+</section>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>Oud Royal</span><span class="marquee-sep">✦</span>
+    <span>Rose de Taif</span><span class="marquee-sep">✦</span>
+    <span>Nuit d'Orient</span><span class="marquee-sep">✦</span>
+    <span>Ambre Noir</span><span class="marquee-sep">✦</span>
+    <span>Velours de Nuit</span><span class="marquee-sep">✦</span>
+    <span>Jardin Secret</span><span class="marquee-sep">✦</span>
+    <span>Oud Royal</span><span class="marquee-sep">✦</span>
+    <span>Rose de Taif</span><span class="marquee-sep">✦</span>
+    <span>Nuit d'Orient</span><span class="marquee-sep">✦</span>
+    <span>Ambre Noir</span><span class="marquee-sep">✦</span>
+    <span>Velours de Nuit</span><span class="marquee-sep">✦</span>
+    <span>Jardin Secret</span><span class="marquee-sep">✦</span>
+  </div>
+</div>
+
+<section class="section featured-section" id="featured">
+  <div class="section-header reveal">
+    <span class="section-number">01</span>
+    <h2 class="section-title">Featured <em>Collection</em></h2>
+    <p class="section-desc">Our most coveted fragrances, crafted for those who define their own legacy.</p>
+  </div>
+  <div class="products-grid">
+    <div class="product-card reveal" data-delay="0">
+      <div class="product-img-wrap">
+        <img src="images/V3.png" alt="Nuit d'Orient" class="product-img">
+        <div class="product-overlay">
+          <a href="product.html?id=nuit-dorient" class="product-view-btn">View Details</a>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Oriental</span>
+        <h3 class="product-name">Nuit d'Orient</h3>
+        <p class="product-notes">Oud · Sandalwood · Black Amber</p>
+        <div class="product-footer">
+          <span class="product-price">€285</span>
+          <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal" data-delay="120">
+      <div class="product-img-wrap">
+        <img src="images/3.png" alt="Rose Sauvage" class="product-img">
+        <div class="product-overlay">
+          <a href="product.html?id=rose-sauvage" class="product-view-btn">View Details</a>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Floral</span>
+        <h3 class="product-name">Rose Sauvage</h3>
+        <p class="product-notes">Rose de Taif · Musk · Patchouli</p>
+        <div class="product-footer">
+          <span class="product-price">€245</span>
+          <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+    <div class="product-card reveal" data-delay="240">
+      <div class="product-img-wrap">
+        <img src="images/9.png" alt="Jardin Secret" class="product-img">
+        <div class="product-overlay">
+          <a href="product.html?id=jardin-secret" class="product-view-btn">View Details</a>
+        </div>
+      </div>
+      <div class="product-info">
+        <span class="product-category">Fresh</span>
+        <h3 class="product-name">Jardin Secret</h3>
+        <p class="product-notes">Bergamot · Jasmine · Green Vetiver</p>
+        <div class="product-footer">
+          <span class="product-price">€265</span>
+          <button class="add-to-cart" onclick="addToCart(this)">Add to Cart</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section-cta reveal">
+    <a href="collection.html" class="btn-outline"><span>View All Fragrances</span></a>
+  </div>
+</section>
+
+<section class="section story-section">
+  <div class="story-inner">
+    <div class="story-image reveal">
+      <img src="images/1.png" alt="Brand Story">
+      <div class="story-img-accent"></div>
+    </div>
+    <div class="story-content reveal" data-delay="100">
+      <span class="section-number">02</span>
+      <h2 class="story-title">Where Tradition<br><em>Meets Artistry</em></h2>
+      <p class="story-text">AMRANI PARFUMS was born from a deep reverence for the ancient art of perfumery. Each fragrance is a bridge between the mystical spice routes of the East and the refined sensibilities of modern luxury.</p>
+      <p class="story-text">We source only the rarest raw materials — Bulgarian rose absolutes, aged Hindi oud, Moroccan orange blossom — and entrust them to master perfumers who understand that true luxury cannot be rushed.</p>
+      <div class="story-stats">
+        <div class="stat">
+          <span class="stat-number">12</span>
+          <span class="stat-label">Rare Fragrances</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">34</span>
+          <span class="stat-label">Unique Ingredients</span>
+        </div>
+        <div class="stat">
+          <span class="stat-number">3</span>
+          <span class="stat-label">Years of Craft</span>
+        </div>
+      </div>
+      <a href="about.html" class="btn-primary"><span>Discover Our Story</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section arrivals-section">
+  <div class="arrivals-inner reveal">
+    <div class="arrivals-content">
+      <span class="arrivals-label">New Arrival — 2026</span>
+      <h2 class="arrivals-title">Velours<br>de Nuit</h2>
+      <p class="arrivals-subtitle">The latest addition to our nocturnal collection. A dark velvet of iris, smoked vetiver, and midnight musk — for those who wear the night.</p>
+     <a href="product.html?id=velours-de-nuit" class="btn-primary"><span>Explore Now</span></a>
+    </div>
+    <div class="arrivals-image">
+      <img src="images/6V3.png" alt="Velours de Nuit">
+    </div>
+  </div>
+</section>
+
+<section class="section philosophy-section">
+  <div class="philosophy-inner reveal">
+    <p class="philosophy-quote">"A perfume is an invisible garment, the most intimate expression of who you are — and who you aspire to be."</p>
+    <span class="philosophy-author">— Mohamed El Amrani, Founder</span>
+  </div>
+</section>
+
+<section class="section newsletter-section">
+  <div class="newsletter-inner reveal">
+    <span class="section-number">03</span>
+    <h2 class="newsletter-title">Enter the Inner Circle</h2>
+    <p class="newsletter-desc">Be the first to know about new releases, exclusive collections, and private events for the discerning few.</p>
+    <form class="newsletter-form" onsubmit="handleNewsletter(event)">
+      <input type="email" placeholder="Your email address" class="newsletter-input" required>
+      <button type="submit" class="newsletter-btn">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <div class="footer-logo">AMRANI<br>PARFUMS</div>
+      <p class="footer-tagline">Luxury fragrances born from the soul of the East. Crafted for those who live with intention.</p>
+      <div class="footer-social">
+        <a href="#" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="https://www.linkedin.com/in/mohamedelamrani-a6939738b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3B6tkxNfv%2BTYGa5NCn60jMTw%3D%3D" class="social-link">LinkedIn</a>
+      </div>
+    </div>
+    <div class="footer-nav">
+      <div class="footer-col">
+        <h4 class="footer-col-title">Navigate</h4>
+        <a href="index.html" class="footer-link">Home</a>
+        <a href="collection.html" class="footer-link">Collection</a>
+        <a href="about.html" class="footer-link">About</a>
+        <a href="contact.html" class="footer-link">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Collection</h4>
+        <a href="collection.html" class="footer-link">Oriental</a>
+        <a href="collection.html" class="footer-link">Floral</a>
+        <a href="collection.html" class="footer-link">Woody</a>
+        <a href="collection.html" class="footer-link">New Arrivals</a>
+      </div>
+      <div class="footer-col">
+        <h4 class="footer-col-title">Maison</h4>
+        <p class="footer-info">Fès, Morocco</p>
+        <p class="footer-info">info@amraniparfums.ma</p>
+        <p class="footer-info">+212 614 833 609</p>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 AMRANI PARFUMS. All rights reserved.</p>
+    <p>Crafted with passion in Morocco.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
