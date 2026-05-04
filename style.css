@@ -497,7 +497,9 @@ input,textarea{font-family:inherit}
 @media(max-width:768px){
   .nav{padding:20px 24px}
   .nav.scrolled{padding:14px 24px}
-  .nav-left,.nav-right{display:none}
+ .nav-left{display:none}
+.nav-right{display:none}
+.nav-cart{display:flex !important}
   .nav-hamburger{display:flex}
   .section{padding:80px 24px}
   .story-stats{grid-template-columns:repeat(3,1fr)}
