@@ -160,7 +160,7 @@ input,textarea{font-family:inherit}
 }
 .marquee-track{
   display:flex;gap:48px;align-items:center;white-space:nowrap;
-  animation:marquee 12s linear infinite;
+  animation:marquee 8s linear infinite;
 }
 .marquee-track span{font-size:0.65rem;font-weight:400;letter-spacing:0.25em;text-transform:uppercase;color:var(--ink)}
 .marquee-sep{font-size:0.5rem;color:var(--ink);opacity:0.5}
