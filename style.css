@@ -330,7 +330,7 @@ input,textarea{font-family:inherit}
 .filter-btn.active,.filter-btn:hover{color:var(--gold);border-color:var(--gold-border);background:var(--gold-dim)}
 .collection-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:2px;max-width:1400px;margin:0 auto}
 .collection-grid .product-card{transition:opacity 0.4s,transform 0.4s var(--ease-out)}
-.collection-grid .product-card.hidden{opacity:0;pointer-events:none;transform:scale(0.95)}
+.collection-grid .product-card.hidden{display:none}
 
 /* ABOUT PAGE */
 .about-story{background:var(--ink);padding:120px 60px}

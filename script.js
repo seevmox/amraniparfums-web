@@ -470,21 +470,25 @@ document.addEventListener('DOMContentLoaded', () => {
   const filterBtns = document.querySelectorAll('.filter-btn');
   const productCards = document.querySelectorAll('.collection-grid .product-card');
   if (filterBtns.length && productCards.length) {
-    filterBtns.forEach(btn => {
-      btn.addEventListener('click', () => {
-        filterBtns.forEach(b => b.classList.remove('active'));
-        btn.classList.add('active');
-        const filter = btn.dataset.filter;
-        productCards.forEach(card => {
-          const category = card.dataset.category;
-          if (filter === 'all' || category === filter) {
-            card.classList.remove('hidden');
-          } else {
-            card.classList.add('hidden');
-          }
-        });
-      });
+   filterBtns.forEach(btn => {
+  btn.addEventListener('click', () => {
+    filterBtns.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    const filter = btn.dataset.filter;
+    productCards.forEach(card => {
+      const category = card.dataset.category;
+      const gender = card.dataset.gender;
+      const matchAll = filter === 'all';
+      const matchGender = filter === gender || (filter === 'for-her' && gender === 'unisex') || (filter === 'for-him' && gender === 'unisex');
+      const matchCategory = category === filter;
+      if (matchAll || matchGender || matchCategory) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
     });
+  });
+});
   }
 
   const tabBtns = document.querySelectorAll('.tab-btn');
