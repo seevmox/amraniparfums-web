@@ -165,6 +165,9 @@ input,textarea{font-family:inherit}
 .marquee-track span{font-size:0.65rem;font-weight:400;letter-spacing:0.25em;text-transform:uppercase;color:var(--ink)}
 .marquee-sep{font-size:0.5rem;color:var(--ink);opacity:0.5}
 @keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@media(max-width:768px){
+  .marquee-track{animation-duration:12s}
+}
 
 /* SECTIONS */
 .section{padding:120px 60px}
@@ -497,9 +500,9 @@ input,textarea{font-family:inherit}
 @media(max-width:768px){
   .nav{padding:20px 24px}
   .nav.scrolled{padding:14px 24px}
- .nav-left{display:none}
+.nav-left{display:none}
 .nav-right{display:none}
-.nav-cart{display:flex !important}
+.nav-cart{display:flex !important;position:absolute;right:64px;top:50%;transform:translateY(-50%)}
   .nav-hamburger{display:flex}
   .section{padding:80px 24px}
   .story-stats{grid-template-columns:repeat(3,1fr)}
