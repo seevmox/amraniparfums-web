@@ -164,14 +164,32 @@
 <script>
 function handleContactForm(e) {
   e.preventDefault();
-  const btn = e.target.querySelector('.form-submit');
-  btn.textContent = 'Message Sent ✓';
-  btn.style.background = '#5a8a5a';
-  setTimeout(() => {
-    btn.textContent = 'Send Message';
-    btn.style.background = '';
-    e.target.reset();
-  }, 3500);
+  const form = e.target;
+  const btn = form.querySelector('.form-submit');
+  const data = new FormData(form);
+
+  fetch('/', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+    body: new URLSearchParams(data).toString()
+  })
+  .then(() => {
+    btn.textContent = 'Message Sent ✓';
+    btn.style.background = '#5a8a5a';
+    form.reset();
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
+    }, 3500);
+  })
+  .catch(() => {
+    btn.textContent = 'Error — Try Again';
+    btn.style.background = '#c04040';
+    setTimeout(() => {
+      btn.textContent = 'Send Message';
+      btn.style.background = '';
+    }, 3000);
+  });
 }
 </script>
 </body>
